@@ -150,13 +150,13 @@
   
   graph LR;
 
-  Pacientes[Pacientes] ---> Criarprofsaude["Criar Pacientes"] ---> Cadastrar[/"Cadastrar"/];
+  Pacientes[Pacientes] ---> Criarprofsaude["Criar Pacientes"] ---> Cadastrar[/"Cadastrar paciente"/];
 
- Nome -.-> Cadastrar[/"Cadastrar"/];
- E-mail -.-> Cadastrar[/"Cadastrar"/];
- CPF -.-> Cadastrar[/"Cadastrar"/];
- RG -.-> Cadastrar[/"Cadastrar"/];
- Sexo -.-> Cadastrar[/"Cadastrar"/];
- Telefone -.-> |whatsapp?| Cadastrar[/"Cadastrar"/];
+ Nome -.-> Cadastrar;
+ E-mail -.-> Cadastrar;
+ CPF -.-> Cadastrar;
+ RG -.-> Cadastrar;
+ Sexo -.-> Cadastrar;
+ Telefone -.-> |whatsapp?| Cadastrar;
 
 ```
