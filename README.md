@@ -32,26 +32,23 @@
 
 ```
 
+## Organização de dependência de informação ou atributo
 
 ```mermaid
   
   graph LR;
 
-  Dependência[Atributo] -.-> |" \n dependência  "| saida[/"Método"/];
+  Atributo[Atributo] -.-> |" \n dependência  "| Metodo[/"Método"/];
 
-
-
-```
-
-```mermaid
   
-  graph LR;
 
-  Dependência[informação] -.-> |" \n dependência  "| saida[/"Ação"/];
+  Informação[informação] -.-> |" \n dependência  "| Ação[/"Ação"/];
 
+### Todo ....> é símbolo de dependência
 
 
 ```
+
 
 <br>
 <br>
