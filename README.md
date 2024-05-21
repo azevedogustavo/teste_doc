@@ -106,7 +106,57 @@
   graph LR;
 
   UnidadesDeSaúde[Telediagnóstico] ---> CriarUnidadeSaude["Criar undiade de saúde"];
-  CriarUnidadeSaude ---> | \n Teleconsultoria,  Telediagnóstico, Tele-educação | Cadastrar[/"Cadastrar"/];
+  CriarUnidadeSaude ---> |  Teleconsultoria,  Telediagnóstico, Tele-educação | Cadastrar[/"Cadastrar"/];
   NomeUnidadeSaude[Nome da unidade de saúde] -.-> Cadastrar;
   CNES -.-> Cadastrar;
+```
+
+
+<br>
+<br>
+
+---
+
+# Fluxo de cadastro de profissionais de saúde
+
+```mermaid
+  
+  graph LR;
+
+  PofSaude[Profissionais de saúde] ---> Criarprofsaude["Criar Profissionais de saúde"] ---> Cadastrar[/"Cadastrar"/];
+  NomeProfSaude[Nome do profssional de saúde] -.-> Cadastrar
+  E-mailProfSaude[E-mail do prof. saúde] -.-> Cadastrar;
+  UnidadeDeSaude[Unidade de Saúde] -.-> Cadastrar;
+  CPF[CPF] -.-> Cadastrar;
+  CRM[Registro do conselho de área profissional]-.-> Cadastrar;
+  CNS[CNS] -.-> Cadastrar;
+  CBO[Ocupação - Código CBO com 6 dígitos] -.-> Cadastrar;
+  GrupoPermissão[Admin, Gerente, pediatra e Geriatra] -.-> Cadastrar;
+  ProfSaudeTipo[Tipos de profssionas de saude] -.-> | profissional de saúde, PROVAB, Mais Médicos, Outros  |Cadastrar;
+  Sexo[Sexo] -.-> |masculino, feminino, outros| Cadastrar;
+
+
+```
+
+
+<br>
+<br>
+
+---
+
+# Fluxo de cadastro de paciente
+
+```mermaid
+  
+  graph LR;
+
+  Pacientes[Pacientes] ---> Criarprofsaude["Criar Pacientes"] ---> Cadastrar[/"Cadastrar"/];
+
+ Nome -.-> Cadastrar[/"Cadastrar"/];
+ E-mail -.-> Cadastrar[/"Cadastrar"/];
+ CPF -.-> Cadastrar[/"Cadastrar"/];
+ RG -.-> Cadastrar[/"Cadastrar"/];
+ Sexo -.-> Cadastrar[/"Cadastrar"/];
+ Telefone -.-> |whatsapp?| Cadastrar[/"Cadastrar"/];
+
 ```
