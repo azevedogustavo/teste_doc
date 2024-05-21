@@ -44,8 +44,6 @@
 
   Informação[informação] -.-> |" \n dependência  "| Ação[/"Ação"/];
 
-### Todo ....> é símbolo de dependência
-
 
 ```
 
